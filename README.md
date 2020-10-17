@@ -6,7 +6,8 @@ This is the main repo for our Tamu 2020 Datathon project by Dustin, Bailey, Sand
 
 Apologetic / Politeness (Bailey)     
 * Sorry    
-* Please   
+* Please  
+* I believe / I think  
 
 Authoritative (Sandra)  
 * Commands  
