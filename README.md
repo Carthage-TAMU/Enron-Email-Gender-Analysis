@@ -6,13 +6,13 @@ This is the main repo for our Tamu 2020 Datathon project by Dustin, Bailey, Sand
 
 Apologetic / Politeness (Bailey)     
 * Sorry    
-* Please  
+* Please   
 Authoritative (Sandra)  
 * Commands  
 * "Do X"  
 Personal vs Transactional (Dustin)  
 * Length of Email  
-* greeting / closing 
+* greeting / closing   
 Descriptiveness (Joey)  
 * Times/Dates
 * Adjectives  
