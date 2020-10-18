@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final_enron_gender' inline='true' name='federated.0xbzsx80bjr1uo11pna7z1k09xd0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_enron_gender' name='textscan.0egsgs80i7sly71bojvm501axnoe'>
+            <connection class='textscan' directory='C:/Users/dusti/Downloads' filename='final_enron_gender.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0egsgs80i7sly71bojvm501axnoe' name='final_enron_gender.csv' table='[final_enron_gender#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='index' ordinal='1' />
+            <column datatype='string' name='date' ordinal='2' />
+            <column datatype='string' name='sender' ordinal='3' />
+            <column datatype='string' name='recipient1' ordinal='4' />
+            <column datatype='string' name='subject' ordinal='5' />
+            <column datatype='string' name='sender_name' ordinal='6' />
+            <column datatype='string' name='recipient_name' ordinal='7' />
+            <column datatype='string' name='sender_gender' ordinal='8' />
+            <column datatype='string' name='recipient_gender' ordinal='9' />
+            <column datatype='string' name='clean_text' ordinal='10' />
+            <column datatype='string' name='text_tokens' ordinal='11' />
+            <column datatype='string' name='text_no_stop' ordinal='12' />
+            <column datatype='string' name='text_ns_pos' ordinal='13' />
+            <column datatype='integer' name='num_apologetic' ordinal='14' />
+            <column datatype='integer' name='num_uncertain' ordinal='15' />
+            <column datatype='integer' name='num_appreciative' ordinal='16' />
+            <column datatype='integer' name='num_confident' ordinal='17' />
+            <column datatype='integer' name='num_sad' ordinal='18' />
+            <column datatype='integer' name='num_familial' ordinal='19' />
+            <column datatype='integer' name='num_angry' ordinal='20' />
+            <column datatype='integer' name='num_happy' ordinal='21' />
+            <column datatype='integer' name='num_holidays' ordinal='22' />
+            <column datatype='integer' name='adjInEmail' ordinal='23' />
+            <column datatype='integer' name='num_words' ordinal='24' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>sender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recipient1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recipient1]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>recipient1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subject]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender_name]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>sender_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recipient_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recipient_name]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>recipient_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender_gender]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>sender_gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recipient_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recipient_gender]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>recipient_gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clean_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clean_text]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>clean_text</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text_tokens</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text_tokens]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>text_tokens</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text_no_stop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text_no_stop]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>text_no_stop</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text_ns_pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text_ns_pos]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>text_ns_pos</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_apologetic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_apologetic]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_apologetic</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_uncertain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_uncertain]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_uncertain</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_appreciative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_appreciative]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_appreciative</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_confident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_confident]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_confident</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_sad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_sad]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_sad</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_familial</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_familial]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_familial</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_angry</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_angry]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_angry</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_happy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_happy]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_happy</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_holidays</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_holidays]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_holidays</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adjInEmail</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adjInEmail]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>adjInEmail</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_words</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_words]</local-name>
+            <parent-name>[final_enron_gender.csv]</parent-name>
+            <remote-alias>num_words</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Adj In Email' datatype='integer' name='[adjInEmail]' role='measure' type='quantitative' />
+      <column caption='Clean Text' datatype='string' name='[clean_text]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='string' name='[date]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Num Angry' datatype='integer' name='[num_angry]' role='measure' type='quantitative' />
+      <column caption='Num Apologetic' datatype='integer' name='[num_apologetic]' role='measure' type='quantitative' />
+      <column caption='Num Appreciative' datatype='integer' name='[num_appreciative]' role='measure' type='quantitative' />
+      <column caption='Num Confident' datatype='integer' name='[num_confident]' role='measure' type='quantitative' />
+      <column caption='Num Familial' datatype='integer' name='[num_familial]' role='measure' type='quantitative' />
+      <column caption='Num Happy' datatype='integer' name='[num_happy]' role='measure' type='quantitative' />
+      <column caption='Num Holidays' datatype='integer' name='[num_holidays]' role='measure' type='quantitative' />
+      <column caption='Num Sad' datatype='integer' name='[num_sad]' role='measure' type='quantitative' />
+      <column caption='Num Uncertain' datatype='integer' name='[num_uncertain]' role='measure' type='quantitative' />
+      <column caption='Num Words' datatype='integer' name='[num_words]' role='measure' type='quantitative' />
+      <column caption='Recipient1' datatype='string' name='[recipient1]' role='dimension' type='nominal' />
+      <column caption='Recipient Gender' datatype='string' name='[recipient_gender]' role='dimension' type='nominal' />
+      <column caption='Recipient Name' datatype='string' name='[recipient_name]' role='dimension' type='nominal' />
+      <column caption='Sender' datatype='string' name='[sender]' role='dimension' type='nominal' />
+      <column caption='Sender Gender' datatype='string' name='[sender_gender]' role='dimension' type='nominal' />
+      <column caption='Sender Name' datatype='string' name='[sender_name]' role='dimension' type='nominal' />
+      <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+      <column caption='Text No Stop' datatype='string' name='[text_no_stop]' role='dimension' type='nominal' />
+      <column caption='Text Ns Pos' datatype='string' name='[text_ns_pos]' role='dimension' type='nominal' />
+      <column caption='Text Tokens' datatype='string' name='[text_tokens]' role='dimension' type='nominal' />
+      <column-instance column='[sender_gender]' derivation='None' name='[none:sender_gender:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.464286' measure-ordering='alphabetic' measure-percentage='0.535714' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sender_gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Number of Apologetic Words per Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_enron_gender' name='federated.0xbzsx80bjr1uo11pna7z1k09xd0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xbzsx80bjr1uo11pna7z1k09xd0'>
+            <column-instance column='[num_apologetic]' derivation='Avg' name='[avg:num_apologetic:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sender_gender]' derivation='None' name='[none:sender_gender:nk]' pivot='key' type='nominal' />
+            <column caption='Num Apologetic' datatype='integer' name='[num_apologetic]' role='measure' type='quantitative' />
+            <column caption='Sender Gender' datatype='string' name='[sender_gender]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[none:sender_gender:nk]' value='246' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[none:sender_gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[avg:num_apologetic:qk]</rows>
+        <cols>[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[none:sender_gender:nk]</cols>
+      </table>
+      <simple-id uuid='{634A704B-7236-412C-BB9F-AD3A539AF28C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[none:sender_gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xbzsx80bjr1uo11pna7z1k09xd0].[none:sender_gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A4E33456-AB70-4CF1-9B8C-13FF06C3E274}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      M2McDrdnxwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
