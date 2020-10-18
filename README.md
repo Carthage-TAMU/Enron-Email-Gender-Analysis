@@ -1,25 +1,6 @@
 # Enron-Email-Gender-Analysis
-This is the main repo for our Tamu 2020 Datathon project by Dustin, Bailey, Sandra, and Joey  
+This is the main repo for our Tamu 2020 Datathon project by Dustin, Bailey, Sandra, and Joey   
 
+[Project Presentation Video](https://www.youtube.com/watch?v=OcqLI3W5q8c&feature=emb_logo&ab_channel=DustinOsweiler)
 
-
-
-Apologetic / Politeness (Bailey)     
-* Sorry    
-* Please  
-* I believe / I think  
-
-Authoritative (Sandra)  
-* Commands  
-* "Do X"  
-
-Personal vs Transactional (Dustin)  
-* Length of Email  
-* greeting / closing   
-
-Descriptiveness (Joey)  
-* Times/Dates
-* Adjectives  
-* Places / Names  
-
-
+!["Enron_Gender_Poster"](enron_gender_poster.jpg)
