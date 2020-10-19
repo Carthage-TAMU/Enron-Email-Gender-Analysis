@@ -21,6 +21,10 @@ We started this project because we have noticed that females seem to apologize m
 
 ## Tools and technologies used:  
 * Python (Jupyter Notebooks)  
+    * nltk  
+    * sklearn  
+    * gender-guesser
+    * something
 * Tableau  
 
 ## See our findings in the poster and video:  
