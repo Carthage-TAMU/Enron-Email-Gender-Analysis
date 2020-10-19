@@ -24,7 +24,11 @@ We started this project because we have noticed that females seem to apologize m
     * nltk  
     * sklearn  
     * gender-guesser
-    * something
+    * imblearn.over_sampling  
+    * scipy  
+    * wordcloud  
+    * numpy  
+    * pandas  
 * Tableau  
 
 ## See our findings in the poster and video:  
