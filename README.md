@@ -1,5 +1,5 @@
 # Enron-Email-Gender-Analysis
-## Project investigating differences in professional email communication between men and women.  
+## Investigating differences in professional email communication between men and women.  
 
 We started this project because we have noticed that females seem to apologize more in professional and academic settings. We decided to assess the validity of this observation by analyzing the vocabulary used in professional emails. This project began at the [TAMU Datathon 2020](https://tamudatathon.com/) and is an ongoing project by Carthage College Data Science Club members.  
 
